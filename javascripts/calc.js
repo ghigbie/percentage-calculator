@@ -3,11 +3,10 @@ const numerator = document.getElementById('numerator'),
       form = document.getElementById('mainForm'),
       result = document.getElementById('result');
   
-let calculatePercent = (numerator, denominator, targetElement) => {
-    this.numerator = parseFloat(numerator.value);
-    this.denominator = parseFloat(denominator.value);
-    let percentResult = (this.numerator/this.denominator) * 100;
-    targetElement.innerHTML = percentResult;
-};
-
-form.addEventListener('submit', calculatePercent(numerator, denominator, result));
+form.addEventListener('submit', (event) => {
+  let x = parseFloat(numerator.value);
+  let y = parseFloat(denominator.value);
+  let percentResult = (x/y) * 100;
+  result.innerText = `Result: ${percentResult}%`;
+  event.preventDefault();
+});
