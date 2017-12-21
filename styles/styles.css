@@ -9,3 +9,8 @@
 .light-text{
     color: #e3e7ed;
 }
+
+.entry{
+    width: 15%;
+    min-width: 50px;
+}
