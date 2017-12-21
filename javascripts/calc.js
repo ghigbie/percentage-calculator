@@ -6,7 +6,7 @@ const numerator = document.getElementById('numerator'),
 form.addEventListener('submit', (event) => {
   let x = parseFloat(numerator.value);
   let y = parseFloat(denominator.value);
-  let percentResult = (x/y) * 100;
+  let percentResult = ((x/y) * 100).toFixed(2);
   result.innerText = `Result: ${percentResult}%`;
   event.preventDefault();
 });
