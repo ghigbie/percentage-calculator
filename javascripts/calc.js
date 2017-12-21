@@ -1,16 +1,12 @@
-const numerator = document.getElementById('numerator'),
+const numerator   = document.getElementById('numerator'),
       denominator = document.getElementById('denominator'),
-      form = document.getElementById('mainForm'),
-      result = document.getElementById('result');
+      form        = document.getElementById('mainForm'),
+      result      = document.getElementById('result');
   
 form.addEventListener('submit', (event) => {
-    if(!numerator.value || !denominator.value){
-        alert(`Please enter values in the fields`);
-    }else{
-        let x = parseFloat(numerator.value);
-        let y = parseFloat(denominator.value);
-        let percentResult = ((x/y) * 100).toFixed(2);
-        result.innerText = `Result: ${percentResult}%`;
-        event.preventDefault();
-    }
+    let x = parseFloat(numerator.value);
+    let y = parseFloat(denominator.value);
+    let percentResult = ((x/y) * 100).toFixed(2);
+    result.innerText = `Result: ${percentResult}%`;
+    event.preventDefault();
 });
