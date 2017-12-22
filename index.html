@@ -16,13 +16,29 @@
         <div class="main-content">
             <div class="container">
                 <h3>X is what % of Y?<h3>
+
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton">
+                            Please select
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">What is Y% of X?</a>
+                        <a class="dropdown-item" href="#">X is Y% of what?</a>
+                        <a class="dropdown-item" href="#">What % of X is Y?</a>
+                        <a class="dropdown-item" href="#">X% of what is Y?</a>
+                        <a class="dropdown-item" href="#">Y% of X is what?</a>
+                    </div>
+
+                </div>
                 <form class="form-inline" id="mainForm">
                     <div class="col-auto">
-                        <input type="text" 
+                        <input type="text"
                                class="entry"
                                id="numerator"
                                > is what % of
-                        <input type="text" 
+                        <input type="text"
                                class="entry"
                                id="denominator"
                                >?
