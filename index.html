@@ -16,45 +16,21 @@
         <div class="main-content">
             <div class="container">
                 <h3>X is what % of Y?<h3>
-
-                    <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div>
-
-                    <div class="dropdown show">
-                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown link
-                      </a>
-
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </div>
-
                 <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle"
                             type="button"
-                            id="dropdownMenuButton">
-                            Please select
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">What is Y% of X?</a>
-                        <a class="dropdown-item" href="#">X is Y% of what?</a>
-                        <a class="dropdown-item" href="#">What % of X is Y?</a>
-                        <a class="dropdown-item" href="#">X% of what is Y?</a>
-                        <a class="dropdown-item" href="#">Y% of X is what?</a>
-                    </div>
-
+                            id="menu1"
+                            data-toggle="dropdown">
+                            Please Select<span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" href="#">What is Y% of X?</a></li>
+                        <li role="presentation"><a role="menuitem" href="#">X is Y% of what?</a></li>
+                        <li role="presentation"><a role="menuitem" href="#">What % of X is Y?</a></li>
+                        <li role="presentation"><a role="menuitem" href="#">X% of what is Y?</a></li>
+                        <li role="presentation"><a role="menuitem" href="#">Y% of X is what?</a></li>
+                    </ul>
                 </div>
+                <br>
                 <form class="form-inline" id="mainForm">
                     <div class="col-auto">
                         <input type="text"
