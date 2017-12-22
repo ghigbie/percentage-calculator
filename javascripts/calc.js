@@ -8,14 +8,26 @@ const dropdown    = document.getElementById('dropdownButton'),
 let option1 = {
     id: 1,
     name: 'What is Y% of X?',
-    formula: ""
-}
+    formula: (event) => {
+        let x = parseFloat(numerator.value);
+        let y = parseFloat(denominator.value);
+        let percentResult = ((x/y) * 100).toFixed(2);
+        result.innerText = `Result: ${percentResult}%`;
+        event.preventDefault();
+    }
+};
 
 let option2 = {
     id: 2,
     name: 'X is Y% of what?',
-    formula: ""
-}
+    formula: (event) => {
+        let x = parseFloat(numerator.value);
+        let y = parseFloat(denominator.value);
+        let percentResult = ((x/y) * 100).toFixed(2);
+        result.innerText = `Result: ${percentResult}%`;
+        event.preventDefault();
+    }
+};
 
 let option3 = {
     id: 3,
@@ -32,14 +44,14 @@ let option4 = {
 let option5 = {
     id: 5,
     name: 'Y% of X is what?',
-    formula: ""
-}
+    formula: (event) => {
+        let x = parseFloat(numerator.value);
+        let y = parseFloat(denominator.value);
+        let percentResult = ((y/x) * 100).toFixed(2);
+        result.innerText = `Result: ${percentResult}%`;
+        event.preventDefault();
+    }
+};
 
 
-form.addEventListener('submit', (event) => {
-    let x = parseFloat(numerator.value);
-    let y = parseFloat(denominator.value);
-    let percentResult = ((x/y) * 100).toFixed(2);
-    result.innerText = `Result: ${percentResult}%`;
-    event.preventDefault();
-});
+form.addEventListener('submit', option1.formula);
