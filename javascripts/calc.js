@@ -1,8 +1,10 @@
-const numerator   = document.getElementById('numerator'),
+const dropdown    = document.getElementById('dropdownButton'),
+      headerText  = document.getElementById('headerText'),
+      numerator   = document.getElementById('numerator'),
       denominator = document.getElementById('denominator'),
       form        = document.getElementById('mainForm'),
       result      = document.getElementById('result');
-  
+
 form.addEventListener('submit', (event) => {
     let x = parseFloat(numerator.value);
     let y = parseFloat(denominator.value);
